@@ -21,7 +21,7 @@
     rel="stylesheet" />
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 
 <body>
@@ -71,13 +71,9 @@
     <!-- HERO -->
     <div class="hero-section">
       <div class="hero-bg">
-        <img src="imgs/atardecer%20valkar%20entrada.png" alt="Eteria" class="hero-bg-img" id="heroBg" />
+        <img src="imgs/jardin%20del%20castillo.png" alt="Eteria" class="hero-bg-img" id="heroBg" />
         <div class="hero-overlay"></div>
       </div>
-      <a href="#" class="hero-achievement-badge" onclick="showSection('creditos'); return false;"
-        title="Medalla de Oro Nacional — Infomatrix Costa Rica">
-        <i class="fas fa-trophy"></i><span>Oro Nacional · Infomatrix</span>
-      </a>
       <div class="hero-content">
         <p class="hero-eyebrow">Bienvenido a</p>
         <h1 class="hero-title">ETERIA</h1>
@@ -361,7 +357,7 @@
         <!-- Sebastián -->
         <div class="character-card protagonist">
           <div class="character-img-wrap">
-            <img src="imgs/sebastian.png" alt="Sebastián" loading="lazy" />
+            <img src="imgs/sebastian.png" alt="Sebastián" class="character-img encuadre-sebastian" />
             <div class="character-badge">Protagonista</div>
           </div>
           <div class="character-body">
@@ -702,7 +698,7 @@
         <!-- Dragón Oscuro (misterio) -->
         <div class="dragon-card-new mystery" data-type="oscuro">
           <div class="dragon-img-wrap">
-            <img src="imgs/dragon%20corrupto.png" alt="Dragón corrupto de Drakmor" loading="lazy" />
+            <img src="imgs/dragon%20corrupto.png" alt="Dragón corrupto de Drakmor" class="dragon-img-real" />
             <div class="dragon-element dark"><i class="fas fa-skull"></i> Oscuro</div>
           </div>
           <div class="dragon-card-body">
@@ -1110,8 +1106,8 @@
           <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Anochecer en la entrada</span></div>
         </div>
         <div class="gallery-item" data-cat="aldea" onclick="openLightbox(this)">
-          <img src="imgs/catedral%20de%20valkar.png" alt="La catedral de Valkar" loading="lazy" />
-          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>La catedral de Valkar</span></div>
+          <img src="imgs/catedral%20de%20valkar.png" alt="El castillo de Valkar de noche" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>El castillo de noche</span></div>
         </div>
         <div class="gallery-item" data-cat="aldea" onclick="openLightbox(this)">
           <img src="imgs/aldea6.png" alt="La aldea de noche" loading="lazy" />
@@ -1439,7 +1435,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 
 </html>

@@ -270,13 +270,13 @@ const regionData = {
     lugares: [
       {
         nombre: 'El Castillo de Valkar',
-        img: 'imgs/jardin%20del%20castillo.png',
-        desc: 'Sede del Rey Roan y hogar de la princesa Sabrina. Torres cuadradas, murallas dobles y patios interiores. Su jardín, entre secuoyas y antorchas encendidas, es el escenario de la conversación entre Sebastián y Sabrina la noche anterior a la ceremonia — el último momento de paz del juego.'
+        img: 'imgs/catedral%20de%20valkar.png',
+        desc: 'Sede del Rey Roan y hogar de la princesa Sabrina. Levantado contra la roca de la montaña, con torre de campanario, tejados afilados y faroles encendidos toda la noche — lo primero que se ve al acercarse al pueblo.'
       },
       {
-        nombre: 'La Catedral de Valkar',
-        img: 'imgs/catedral%20de%20valkar.png',
-        desc: 'El templo de la aldea, levantado contra la roca de la montaña. Sigue la tradición de las iglesias de madera tallada: torre altísima, campanario y tejados afilados que imitan escamas de dragón. De noche, sus faroles son lo primero que se ve al acercarse al pueblo.'
+        nombre: 'El Jardín del Castillo',
+        img: 'imgs/jardin%20del%20castillo.png',
+        desc: 'El jardín de la fortaleza, entre secuoyas y antorchas. Aquí vive la princesa Sabrina, y aquí ocurre su conversación con Sebastián la noche anterior a la ceremonia — el último momento de paz del juego.'
       },
       {
         nombre: 'El Santuario',
@@ -313,22 +313,15 @@ const regionData = {
     tagline: 'Donde no se capturan dragones: se negocia con ellos.',
     tema: 'shihima',
     ficha: {
-      'Bioma': 'Valle templado húmedo, bosque de bambú y colinas con cerezos',
-      'Clima': 'Templado, monzones en verano, inviernos suaves con nieve ligera',
-      'Atmósfera': 'Serena y espiritual, con momentos de tensión sigilosa',
-      'Inspiración real': 'Japón feudal — Shirakawa-go, Takayama y mitología sintoísta',
-      'Dragones nativos': 'Ryū, Hai-Riyo, Sui-Riu, Ancreus',
-      'Representa la alianza': 'Princesa Saray',
-      'Estado': 'Narrativa por escribir — la región existe en diseño, no en guion'
+      'Inspiración real': 'Japón feudal',
+      'Estado': 'En diseño — narrativa por escribir'
     },
     descripcion: [
-      'Shihima es una región de valles verdes, ríos cristalinos y bambú que crece hasta ocultar el horizonte. Sus aldeas tienen siglos de historia y todo, desde los puentes de madera hasta los árboles del bosque sagrado, está impregnado de reverencia espiritual.',
-      'Sus habitantes no capturan dragones: los invocan y negocian con ellos, porque creen que son manifestaciones divinas de los elementos naturales. El primer chamán de la aldea estableció un pacto que sigue vigente — los humanos protegen ríos y bosques sagrados, los dragones protegen a los humanos de tormentas y sequías. Romperlo desencadena calamidades.',
-      'El síntoma visible de que algo va mal en Shihima es que el río sagrado se está secando: Sui-Riu, el rey de la lluvia, fue capturado por soldados de Drakmor.'
+      'Shihima es una región de valles verdes, ríos cristalinos y bosques de bambú. Sus habitantes no capturan dragones: los invocan y negocian con ellos, porque creen que son manifestaciones divinas de los elementos naturales.'
     ],
     nota: {
       titulo: 'Región en diseño',
-      texto: 'Shihima tiene definidos su estética, sus dragones, sus personajes y sus localizaciones, pero su narrativa del Acto II todavía no está escrita. Es el hueco de guion más grande del proyecto ahora mismo, y por eso aún no se muestran sus lugares en detalle.'
+      texto: 'Shihima todavía no tiene narrativa escrita. Su estética y sus dragones están definidos, pero el resto está por decidirse — cuando esté cerrado, aparecerá aquí.'
     },
     lugares: []
   },

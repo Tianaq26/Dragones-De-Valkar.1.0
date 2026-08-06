@@ -376,54 +376,6 @@ body:hover .cursor-dot {
   animation: fadeUp 1s 0.4s both;
 }
 
-/* Distintivo discreto en la esquina superior derecha del hero */
-.hero-achievement-badge {
-  position: absolute;
-  top: 1.5rem;
-  right: 2rem;
-  z-index: 3;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 0.35rem 0.85rem;
-  border: 1px solid rgba(201, 147, 58, 0.35);
-  border-radius: 999px;
-  background: rgba(13, 9, 5, 0.5);
-  backdrop-filter: blur(6px);
-  color: var(--gold);
-  font-family: 'Cinzel', serif;
-  font-size: 0.66rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-decoration: none;
-  opacity: 0.75;
-  transition: var(--trans);
-  animation: fadeUp 1s 1.2s both;
-}
-
-.hero-achievement-badge i {
-  font-size: 0.72rem;
-}
-
-.hero-achievement-badge:hover {
-  opacity: 1;
-  color: var(--gold-light);
-  border-color: rgba(201, 147, 58, 0.6);
-}
-
-@media (max-width: 600px) {
-  .hero-achievement-badge {
-    top: 1rem;
-    right: 1rem;
-    padding: 0.3rem 0.6rem;
-    font-size: 0.58rem;
-  }
-
-  .hero-achievement-badge span {
-    display: none;
-  }
-}
-
 .hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   color: var(--text-secondary);
@@ -1092,6 +1044,12 @@ body:hover .cursor-dot {
   object-fit: cover;
   object-position: center top;
   transition: transform 0.5s;
+}
+
+/* Sebastián está de cuerpo entero con mucho cielo encima:
+   se desplaza el encuadre hacia abajo para centrarlo en el personaje. */
+.character-img.encuadre-sebastian {
+  object-position: center 42%;
 }
 
 .character-card:hover .character-img {
