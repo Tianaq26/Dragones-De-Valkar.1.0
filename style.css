@@ -376,6 +376,30 @@ body:hover .cursor-dot {
   animation: fadeUp 1s 0.4s both;
 }
 
+.hero-achievement-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0.8rem 0 1.4rem;
+  padding: 0.5rem 1.1rem;
+  border: var(--border-gold2);
+  border-radius: 999px;
+  background: rgba(201, 147, 58, 0.1);
+  color: var(--gold-light);
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: var(--trans);
+  animation: fadeUp 1s 0.5s both;
+}
+
+.hero-achievement-badge:hover {
+  color: var(--gold-light);
+  box-shadow: var(--glow-gold);
+  transform: translateY(-2px);
+}
+
 .hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   color: var(--text-secondary);
