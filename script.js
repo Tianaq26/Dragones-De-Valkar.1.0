@@ -263,12 +263,6 @@ const regionData = {
       'Gobernada por el Rey Roan, Valkar mantuvo la paz con Shihima, Nyru y Cartago durante generaciones — hasta que Drakmor la rompe al final del Acto I atacando la ciudad e hiriendo de muerte al General Arturo. Ese ataque da inicio a todo el viaje.',
       'Narrativamente funciona como la región tutorial: enseña movimiento, vuelo, combate por turnos y captura de dragones de forma orgánica antes de que el mundo se abra en el Acto II.'
     ],
-    arquitectura: [
-      'Iglesias de madera tallada al estilo de Maramureș, con techos puntiagudos que imitan escamas de dragón y ni un solo clavo en su estructura.',
-      'Aldeas de troncos con techos de paja. Cada familia talla su propio símbolo de dragón en la puerta.',
-      'Fortalezas amuralladas de piedra doble con mercados y gremios — el corazón económico de la región antes del ataque.',
-      'Colores dominantes: gris piedra, marrón madera oscura, verde musgo, blanco nieve y rojo de las tallas pintadas.'
-    ],
     nota: {
       titulo: 'Una región construida sobre cultura real',
       texto: 'Valkar no toma prestada la estética rumana solo por el aspecto visual: su cocina (mămăligă, sarmale, țuică de ciruela), sus nombres de NPC, su fauna cárpática y su folklore —incluido el ajo como protección contra criaturas oscuras— vienen de tradiciones auténticas de Rumania. El Pacto del Primer Invierno, mito fundacional de la región, nace de esa misma raíz.'
@@ -276,8 +270,13 @@ const regionData = {
     lugares: [
       {
         nombre: 'El Castillo de Valkar',
-        img: 'imgs/sabrinafondo1.png',
-        desc: 'Sede del Rey Roan y hogar de la princesa Sabrina. Torres cuadradas, murallas dobles y patios interiores. Su jardín es el escenario de la conversación entre Sebastián y Sabrina la noche anterior a la ceremonia — el último momento de paz del juego.'
+        img: 'imgs/jardin%20del%20castillo.png',
+        desc: 'Sede del Rey Roan y hogar de la princesa Sabrina. Torres cuadradas, murallas dobles y patios interiores. Su jardín, entre secuoyas y antorchas encendidas, es el escenario de la conversación entre Sebastián y Sabrina la noche anterior a la ceremonia — el último momento de paz del juego.'
+      },
+      {
+        nombre: 'La Catedral de Valkar',
+        img: 'imgs/catedral%20de%20valkar.png',
+        desc: 'El templo de la aldea, levantado contra la roca de la montaña. Sigue la tradición de las iglesias de madera tallada: torre altísima, campanario y tejados afilados que imitan escamas de dragón. De noche, sus faroles son lo primero que se ve al acercarse al pueblo.'
       },
       {
         nombre: 'El Santuario',
@@ -286,7 +285,7 @@ const regionData = {
       },
       {
         nombre: 'El Monte Chirripó',
-        img: 'imgs/monteChirripo.png',
+        img: 'imgs/chirripo.png',
         desc: 'En su cima vive el sabio que conoce la historia completa de Eteria. Es el destino de la última orden de Arturo, y desde sus laderas Sebastián presencia el nacimiento de la prisión de luz sobre Valkar.'
       },
       {
@@ -301,8 +300,8 @@ const regionData = {
       },
       {
         nombre: 'La Aldea de Valkar',
-        img: 'imgs/valkar.png',
-        desc: 'El pueblo donde vive Sebastián. Aquí están la herrería de Sergio, la tienda de Helen y las fogatas donde se cocina. Es el primer lugar que el jugador aprende a recorrer… y el primero que ve arder.'
+        img: 'imgs/anochercer%20entrada%20valkar.png',
+        desc: 'El pueblo donde vive Sebastián, custodiado por dos estatuas de piedra a la entrada del valle. Aquí están la herrería de Sergio, la tienda de Helen y las fogatas donde se cocina. Es el primer lugar que el jugador aprende a recorrer… y el primero que ve arder.'
       }
     ]
   },
@@ -326,12 +325,6 @@ const regionData = {
       'Shihima es una región de valles verdes, ríos cristalinos y bambú que crece hasta ocultar el horizonte. Sus aldeas tienen siglos de historia y todo, desde los puentes de madera hasta los árboles del bosque sagrado, está impregnado de reverencia espiritual.',
       'Sus habitantes no capturan dragones: los invocan y negocian con ellos, porque creen que son manifestaciones divinas de los elementos naturales. El primer chamán de la aldea estableció un pacto que sigue vigente — los humanos protegen ríos y bosques sagrados, los dragones protegen a los humanos de tormentas y sequías. Romperlo desencadena calamidades.',
       'El síntoma visible de que algo va mal en Shihima es que el río sagrado se está secando: Sui-Riu, el rey de la lluvia, fue capturado por soldados de Drakmor.'
-    ],
-    arquitectura: [
-      'Casas minka con techos de paja de altísima inclinación, estilo gassho-zukuri, construidas en madera sin clavos.',
-      'Torii de piedra y madera lacada en rojo-ocre marcando la entrada a santuarios y bosques sagrados; los más antiguos cubiertos de musgo.',
-      'Pagodas de cinco pisos en los cerros altos, un elemento por piso: tierra, agua, fuego, viento y vacío.',
-      'Colores dominantes: blanco, madera oscura, rojo laca, verde bambú y gris piedra. Faroles de papel en cada entrada de aldea.'
     ],
     nota: {
       titulo: 'Región en diseño',
@@ -360,12 +353,6 @@ const regionData = {
       'Sus habitantes descienden de los primeros navegantes que llegaron siguiendo a un dragón del mar. Según la tradición, si el último de esos dragones muere, el mar reclamará la isla — por eso capturar uno es la peor traición posible en Nyru.',
       'Es la primera región que Sebastián visita en el Acto II. Su aislamiento es también su problema: Nyru lleva años sin contacto real con el resto de Eteria, y por eso su reina no cree que exista una guerra hasta que la tiene encima.'
     ],
-    arquitectura: [
-      'Casas sobre pilotes de madera de ceiba levantadas sobre lagunas y manglares, conectadas por puentes de cuerda.',
-      'Bohíos circulares con techo cónico de hojas de palma y motivos pintados en rojo y negro.',
-      'Plazas ceremoniales de tierra apisonada usadas para rituales, mercados y juegos.',
-      'Colores dominantes: turquesa, amarillo sol, coral, verde selva y blanco arena. Cada casa pintada de un color distinto.'
-    ],
     nota: {
       titulo: 'La primera alianza',
       texto: 'El arco de Nyru es el que fija la estructura que repetirán las demás regiones del Acto II: llegada, problema social oculto, tres pruebas, ataque de Drakmor, dragón legendario corrupto, purificación y alianza. Puedes leerlo completo en la sección de Historia.'
@@ -393,12 +380,6 @@ const regionData = {
       'De cerca es otra cosa: es la región más rica de Eteria en recursos y su gente es la más pobre. La riqueza existe, solo que nunca se queda. Cinco clanes nobles controlan la concesión del comercio de dragones y cobran a cualquier aldeano que críe uno un "impuesto de protección" del setenta por ciento.',
       'Cartago no hereda su corona: la elige. Cuando Sebastián llega, el viejo rey acaba de morir y la elección del nuevo está por celebrarse. Los clanes ya tienen su candidato, y el pueblo ya sabe que su voto no vale nada. Nadie espera que esta vez sea diferente.'
     ],
-    arquitectura: [
-      'Piedra volcánica negra como material dominante, con las cicatrices del Gran Terremoto todavía visibles: grietas selladas con mortero blanco y torres inclinadas.',
-      'Estilo colonial medievalizado — arcos, columnas, patios interiores con fuente y balcones de madera sobre calles estrechas.',
-      'Haciendas de café en las colinas, con muros altos, portones de hierro y guardias. Son las propiedades de los señores de Cartago.',
-      'Contraste deliberado: las casas de los nobles son amplias y decoradas; las del pueblo, pequeñas y apiñadas, de adobe y madera.'
-    ],
     nota: {
       titulo: 'Inspirada en Mamita Yunai',
       texto: 'Cartago es la denuncia social del juego, y está construida sobre Mamita Yunai (1941), la novela de Carlos Luis Fallas que denunció la explotación de los trabajadores bananeros por la United Fruit Company en Costa Rica. El paralelo es directo: donde la novela tiene una compañía extranjera que se lleva la riqueza, el juego tiene a Drakmor; donde tiene plantaciones de banano como recurso, el juego tiene dragones vivos capturados; donde tiene capataces locales que oprimen a su propio pueblo, el juego tiene a los señores feudales de Cartago. Hasta el episodio más duro de la novela —la gira electoral por Talamanca, donde a un pueblo entero le ponen el voto en la mano y lo cuentan como ganado— se convierte en el corazón emocional de la región. Incluso el coprotagonista, Carlos Sibaja, toma su nombre del narrador de Fallas. El mensaje que hereda el juego es el mismo: el mal no es abstracto, tiene nombres y caras, y siempre hay alguien que sabe la verdad pero tiene miedo de decirla.'
@@ -425,12 +406,6 @@ const regionData = {
       'Drakmor es la quinta región de Eteria y la única que no vive en paz con las demás. Mientras Valkar, Shihima, Nyru y Cartago ven a los dragones como seres vivos con quienes se convive, el pueblo de Drakmor está formado por cazadores que los consideran recursos: armas, mercancía, herramientas de guerra. Esa diferencia de fondo es la raíz de todo el conflicto.',
       'Sus dragones no son normales. Poseen un aura oscura y anormal, y al ser derrotados no caen como los demás: se disuelven en una nube negra y desaparecen sin dejar cuerpo. Nadie en el resto del mundo sabe qué son realmente.',
       'Al final del Acto I, Drakmor cruza la frontera en una ofensiva total contra Valkar. Es el punto de no retorno del juego.'
-    ],
-    arquitectura: [
-      'Fortalezas de piedra negra volcánica con cúpulas oscuras y torres de vigilancia — una estética otomana invertida hacia lo siniestro: austera y de hierro forjado donde lo real era ornamentado y dorado.',
-      'Los Fosos de Caza: arenas circulares hundidas donde se entrena a los dragones capturados para la guerra, rodeadas de gradas militares.',
-      'Forjas permanentes que mantienen el cielo cubierto de columnas de humo negro. El metal es la base económica de la región, no la agricultura.',
-      'Colores dominantes: negro hierro, gris ceniza, rojo forja y púrpura oscuro — el color del aura de los dragones corrompidos.'
     ],
     nota: {
       titulo: 'Un antagonista con base histórica',
@@ -472,12 +447,6 @@ function openRegion(key) {
           + '<p>' + r.nota.texto + '</p>'
           + '</div>';
   }
-
-  main += '<div class="region-block">'
-        + '<h3 class="region-block-title"><i class="fas fa-compass-drafting"></i> Arquitectura y estilo visual</h3>'
-        + '<ul class="region-list">';
-  r.arquitectura.forEach(a => { main += '<li>' + a + '</li>'; });
-  main += '</ul></div>';
 
   if (r.lugares && r.lugares.length) {
     main += '<div class="region-block">'
