@@ -56,8 +56,8 @@
                 class="fas fa-book-open nav-icon"></i>Historia</a></li>
           <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('galeria'); return false;"><i
                 class="fas fa-images nav-icon"></i>Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('logros'); return false;"><i
-                class="fas fa-trophy nav-icon"></i>Logros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('tecnologia'); return false;"><i
+                class="fas fa-microchip nav-icon"></i>Tecnología</a></li>
           <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('creditos'); return false;"><i
                 class="fas fa-star nav-icon"></i>Créditos</a></li>
         </ul>
@@ -77,7 +77,7 @@
       <div class="hero-content">
         <p class="hero-eyebrow">Bienvenido a</p>
         <h1 class="hero-title">ETERIA</h1>
-        <a href="#" class="hero-achievement-badge" onclick="showSection('logros'); return false;">
+        <a href="#" class="hero-achievement-badge" onclick="showSection('creditos'); return false;">
           <i class="fas fa-trophy"></i> Medalla de Oro Nacional — Infomatrix Costa Rica 🥇
         </a>
         <p class="hero-subtitle">Un mundo donde dragones y humanos conviven en paz.<br>Tu aventura está a punto de
@@ -109,34 +109,51 @@
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon"><i class="fas fa-globe-americas"></i></div>
-            <h3>Mundo Abierto</h3>
-            <p>Explora libremente el vasto mundo de Eteria, desde las llanuras de Skarn hasta el jardín del Castillo.
-            </p>
+            <h3>Cinco Regiones</h3>
+            <p>Valkar, Shihima, Nyru, Cartago y Drakmor. Cada región tiene su propio bioma, cultura, dragones nativos
+              y conflicto — inspiradas en culturas reales del mundo.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon"><i class="fas fa-dragon"></i></div>
             <h3>Doma Dragones</h3>
-            <p>Demuestra tu valía en combate para ganar el respeto de los dragones y forjar un vínculo especial.</p>
+            <p>Debilita a un dragón salvaje en combate y gánate su respeto con la comida correcta. Cada dragón
+              capturado conserva su color único y te acompaña a partir de ese momento.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-feather"></i></div>
+            <h3>Vuelo Libre</h3>
+            <p>Monta a tu dragón y recorre Eteria desde el aire. El vuelo tiene resistencia: tu compañero se cansa si
+              lo mantienes demasiado tiempo en el cielo.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Combate Elemental</h3>
+            <p>Combate por turnos entre dragones, con cuatro ataques ligados al tipo elemental de cada especie y
+              efectos visuales propios por elemento.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-fire"></i></div>
+            <h3>Cocina y Recolección</h3>
+            <p>Tala, mina, pesca y recolecta hongos para cocinar en la fogata. Cada receta otorga un efecto distinto
+              según los ingredientes que uses.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-cloud-sun"></i></div>
+            <h3>Mundo Vivo</h3>
+            <p>Ciclo día-noche, clima dinámico, NPCs con rutinas y vegetación que reacciona al viento y a tu paso por
+              ella.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon"><i class="fas fa-scroll"></i></div>
-            <h3>Tu Historia</h3>
-            <p>Elige tu propio camino. Las decisiones que tomes moldearán el destino de Eteria y sus habitantes.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-cog"></i></div>
-            <h3>Combate RPG</h3>
-            <p>Combina habilidades de dragón con armas forjadas por los mejores herreros de la isla.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
-            <h3>PC y Móvil</h3>
-            <p>Disponible para PC. Próximamente en Play Store y App Store para que juegues en cualquier lugar.</p>
+            <h3>Historia por Actos</h3>
+            <p>El Acto I es el tutorial narrativo en Valkar. El Acto II abre el mundo: reunir tres ejércitos y tres
+              dragones legendarios antes de que Valkar caiga.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon"><i class="fas fa-microchip"></i></div>
             <h3>Accesible</h3>
-            <p>Diseñado para correr en dispositivos modestos. Sin necesidad de una super PC ni consola costosa.</p>
+            <p>Optimizado para correr a 30 FPS estables en hardware de gama media-baja, con calidad gráfica
+              configurable. Sin necesidad de una super PC ni consola costosa.</p>
           </div>
         </div>
       </div>
@@ -194,103 +211,139 @@
         <p class="section-eyebrow">Explora</p>
         <h2 class="section-title">El Mundo de Eteria</h2>
         <div class="title-ornament"><span>⸻</span><i class="fas fa-globe"></i><span>⸻</span></div>
-        <p class="section-desc">Eteria está formada por múltiples regiones, cada una con sus propios dragones, secretos
-          y peligros. Desde las coloridas llanuras de Valkar hasta los oscuros bosques de Norim, el mundo te espera.</p>
+        <p class="section-desc">Eteria está dividida en <strong>cinco regiones</strong>. Cuatro de ellas conviven en paz
+          con los dragones desde hace generaciones. La quinta, Drakmor, los considera recursos — y esa diferencia es la
+          raíz de toda la guerra. Haz clic en una región para conocerla a fondo.</p>
       </div>
 
-      <div class="world-grid">
+      <div class="region-grid">
 
-        <div class="world-card" onclick="openWorldModal('valkar')">
-          <div class="world-card-img-wrap">
+        <div class="region-card region-valkar" onclick="openRegion('valkar')">
+          <div class="region-card-img-wrap">
             <img src="imgs/valkar.png" alt="Valkar" />
-            <div class="world-card-overlay">
-              <i class="fas fa-search-plus"></i>
-            </div>
+            <div class="region-card-overlay"><i class="fas fa-arrow-right"></i><span>Explorar región</span></div>
           </div>
-          <div class="world-card-body">
-            <h3 class="world-name">Valkar</h3>
-            <p>La aldea principal de Valkar. Hogar de Sebastián y punto de partida de la aventura. Rodeada de llanuras
-              llenas de dragones.</p>
-            <span class="world-tag">Aldea Principal</span>
+          <div class="region-card-body">
+            <div class="region-card-head">
+              <span class="region-emoji">🪓</span>
+              <h3 class="region-name">Valkar</h3>
+            </div>
+            <p class="region-card-desc">La región natal de Sebastián y capital de Eteria. Castillos de piedra, bosques
+              fríos y llanuras nevadas bajo el reinado del Rey Roan.</p>
+            <div class="region-card-tags">
+              <span class="region-tag">Región tutorial</span>
+              <span class="region-tag alt">Rumania medieval</span>
+            </div>
           </div>
         </div>
 
-        <div class="world-card" onclick="openWorldModal('skarn')">
-          <div class="world-card-img-wrap">
-            <img src="imgs/nat5.png" alt="Llanura de Skarn" />
-            <div class="world-card-overlay">
-              <i class="fas fa-search-plus"></i>
+        <div class="region-card region-shihima" onclick="openRegion('shihima')">
+          <div class="region-card-img-wrap no-img">
+            <div class="region-placeholder"><span>🌸</span>
+              <p>Región en desarrollo</p>
             </div>
+            <div class="region-card-overlay"><i class="fas fa-arrow-right"></i><span>Explorar región</span></div>
           </div>
-          <div class="world-card-body">
-            <h3 class="world-name">Llanura del Ambar</h3>
-            <p>Vasta llanura nombrada en honor a los dragones Amber que la habitan. Es una tierra llena de girasoles y
-              minerales.</p>
-            <span class="world-tag">Región Natural</span>
+          <div class="region-card-body">
+            <div class="region-card-head">
+              <span class="region-emoji">🌸</span>
+              <h3 class="region-name">Shihima</h3>
+            </div>
+            <p class="region-card-desc">Valles de bambú, torii de laca roja y pagodas en los cerros. Aquí no se
+              capturan dragones: se negocia con ellos.</p>
+            <div class="region-card-tags">
+              <span class="region-tag">Acto II</span>
+              <span class="region-tag alt">Japón feudal</span>
+            </div>
           </div>
         </div>
 
-        <div class="world-card" onclick="openWorldModal('santuario')">
-          <div class="world-card-img-wrap">
-            <img src="imgs/santuario.png" alt="Santuario" />
-            <div class="world-card-overlay">
-              <i class="fas fa-search-plus"></i>
+        <div class="region-card region-nyru" onclick="openRegion('nyru')">
+          <div class="region-card-img-wrap no-img">
+            <div class="region-placeholder"><span>🌊</span>
+              <p>Región en desarrollo</p>
             </div>
+            <div class="region-card-overlay"><i class="fas fa-arrow-right"></i><span>Explorar región</span></div>
           </div>
-          <div class="world-card-body">
-            <h3 class="world-name">El Santuario</h3>
-            <p>Un lugar sagrado que no aparece en ningún mapa. Aquí los jóvenes eruditos eligen a su primer dragón
-              compañero.</p>
-            <span class="world-tag">Lugar Sagrado</span>
+          <div class="region-card-body">
+            <div class="region-card-head">
+              <span class="region-emoji">🌊</span>
+              <h3 class="region-name">Nyru</h3>
+            </div>
+            <p class="region-card-desc">Un archipiélago tropical de aguas turquesa y volcanes dormidos. Su gente
+              llegó siguiendo a un dragón del mar.</p>
+            <div class="region-card-tags">
+              <span class="region-tag">Acto II · 1ª parada</span>
+              <span class="region-tag alt">Caribe taíno</span>
+            </div>
           </div>
         </div>
 
-        <div class="world-card" onclick="openWorldModal('castillo')">
-          <div class="world-card-img-wrap">
-            <img src="imgs/sabrinafondo1.png" alt="Jardín del Castillo" />
-            <div class="world-card-overlay">
-              <i class="fas fa-search-plus"></i>
+        <div class="region-card region-cartago" onclick="openRegion('cartago')">
+          <div class="region-card-img-wrap no-img">
+            <div class="region-placeholder"><span>🏰</span>
+              <p>Región en desarrollo</p>
             </div>
+            <div class="region-card-overlay"><i class="fas fa-arrow-right"></i><span>Explorar región</span></div>
           </div>
-          <div class="world-card-body">
-            <h3 class="world-name">Jardín del Castillo</h3>
-            <p>El hermoso jardín del castillo real, hogar de la princesa Sabrina. Un lugar de paz… y de conversaciones
-              que cambian destinos.</p>
-            <span class="world-tag">Castillo Real</span>
+          <div class="region-card-body">
+            <div class="region-card-head">
+              <span class="region-emoji">🏰</span>
+              <h3 class="region-name">Cartago</h3>
+            </div>
+            <p class="region-card-desc">La región más rica de Eteria — y la de gente más pobre. Bosque nuboso, café y
+              una elección real que nadie cree que sea limpia.</p>
+            <div class="region-card-tags">
+              <span class="region-tag">Acto II · 2ª parada</span>
+              <span class="region-tag alt">Costa Rica</span>
+            </div>
           </div>
         </div>
 
-        <div class="world-card" onclick="openWorldModal('chirripo')">
-          <div class="world-card-img-wrap">
-            <img src="imgs/monteChirripo.png" alt="Monte Chirripó" />
-            <div class="world-card-overlay">
-              <i class="fas fa-search-plus"></i>
+        <div class="region-card region-drakmor" onclick="openRegion('drakmor')">
+          <div class="region-card-img-wrap no-img">
+            <div class="region-placeholder dark"><span>🌑</span>
+              <p>Región en desarrollo</p>
             </div>
+            <div class="region-card-overlay"><i class="fas fa-arrow-right"></i><span>Explorar región</span></div>
           </div>
-          <div class="world-card-body">
-            <h3 class="world-name">Monte Chirripó</h3>
-            <p>En la cima de esta montaña vive un sabio anciano que conoce toda la historia de Eteria y sus secretos más
-              profundos.</p>
-            <span class="world-tag">Región Montañosa</span>
+          <div class="region-card-body">
+            <div class="region-card-head">
+              <span class="region-emoji">🌑</span>
+              <h3 class="region-name">Drakmor</h3>
+            </div>
+            <p class="region-card-desc">Estepas de ceniza, forjas que nunca se apagan y fosos donde se entrena a los
+              dragones capturados. El enemigo.</p>
+            <div class="region-card-tags">
+              <span class="region-tag danger">Antagonista</span>
+              <span class="region-tag alt">Imperio otomano</span>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
+  </section>
 
-    <!-- Modal de región -->
-    <div class="eteria-modal" id="worldModal" onclick="closeWorldModal(event)">
-      <div class="eteria-modal-content world-modal-content">
-        <button class="modal-close-btn" onclick="closeWorldModal()"><i class="fas fa-times"></i></button>
-        <img id="worldModalImg" src="" alt="" />
-        <div class="world-modal-body">
-          <span id="worldModalTag" class="world-tag"></span>
-          <h2 id="worldModalTitle"></h2>
-          <p id="worldModalDesc"></p>
-        </div>
+  <!-- ===================== DETALLE DE REGIÓN ===================== -->
+  <section id="region" class="page-section">
+    <div class="container">
+      <button class="region-back" onclick="showSection('mundo')">
+        <i class="fas fa-arrow-left"></i> Volver a las regiones
+      </button>
+
+      <div class="region-detail-hero" id="regionHero">
+        <p class="section-eyebrow" id="regionEyebrow"></p>
+        <h2 class="region-detail-title" id="regionTitle"></h2>
+        <p class="region-detail-tagline" id="regionTagline"></p>
+        <div class="region-badges" id="regionBadges"></div>
+      </div>
+
+      <div class="region-detail-layout">
+        <div class="region-detail-main" id="regionMain"></div>
+        <aside class="region-detail-side" id="regionSide"></aside>
       </div>
     </div>
-
   </section>
 
   <!-- ===================== PERSONAJES ===================== -->
@@ -412,6 +465,27 @@
               isla. Pero incluso el reinado más sólido puede temblar cuando Drakmor mueve sus fichas.</p>
             <div class="character-tags">
               <span>Realeza</span><span>Aliado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selena -->
+        <div class="character-card">
+          <div class="character-img-wrap">
+            <div class="character-img-placeholder">
+              <i class="fas fa-user-circle"></i>
+              <p>Imagen próximamente</p>
+            </div>
+            <div class="character-badge secondary">Aliada</div>
+          </div>
+          <div class="character-body">
+            <h3 class="character-name">Selena</h3>
+            <p class="character-role">Campesina de la costa — Guardiana de Nyru</p>
+            <p class="character-desc">Sebastián la conoce en una aldea costera ocupada por Drakmor, y termina siendo
+              la primera aliada real de su viaje. Es ella quien insiste en salvar al dragón legendario en vez de
+              derrotarlo — y quien acaba domándolo y convirtiéndose en la protectora de toda su región.</p>
+            <div class="character-tags">
+              <span>Aliada</span><span>Domadora</span><span>Acto II</span>
             </div>
           </div>
         </div>
@@ -666,9 +740,56 @@
 
       </div>
 
+      <div class="section-header">
+        <p class="section-eyebrow">Los Guardianes</p>
+        <h2 class="section-title">Dragones Legendarios</h2>
+        <div class="title-ornament"><span>⸻</span><i class="fas fa-crown"></i><span>⸻</span></div>
+        <p class="section-desc">Cada región tiene un dragón legendario ligado a su tierra y a su gente. No se capturan
+          como los demás: eligen a su compañero. Reunirlos es el objetivo del Acto II.</p>
+      </div>
+
+      <div class="legendary-grid">
+        <div class="legendary-card light">
+          <div class="legendary-icon"><i class="fas fa-sun"></i></div>
+          <h3>Dragón de la Vida y la Luz</h3>
+          <p class="legendary-region"><i class="fas fa-map-marker-alt"></i> Valkar · Compañero de Sabrina</p>
+          <p>Uno de los dos hermanos ancestrales que dieron origen a Eteria. Su vínculo con la línea protectora de
+            Valkar es lo que permite a Sabrina levantar la prisión de luz sobre la ciudad.</p>
+        </div>
+        <div class="legendary-card water">
+          <div class="legendary-icon"><i class="fas fa-water"></i></div>
+          <h3>Azuarys</h3>
+          <p class="legendary-region"><i class="fas fa-map-marker-alt"></i> Nyru · Elemento Agua</p>
+          <p>El dragón del mar de Nyru. Sebastián y Selena lo encuentran corrupto por Drakmor y lo purifican en el
+            volcán de la isla. Elige a Selena como su domadora.</p>
+        </div>
+        <div class="legendary-card earth">
+          <div class="legendary-icon"><i class="fas fa-mountain"></i></div>
+          <h3>Talamanca</h3>
+          <p class="legendary-region"><i class="fas fa-map-marker-alt"></i> Cartago · Elemento Tierra</p>
+          <p>Duerme bajo el volcán. Los nobles dicen que los terremotos son su ira; los criadores del río saben que
+            son su dolor: cada dragón vendido fuera de Cartago es un hijo que le arrancan.</p>
+        </div>
+        <div class="legendary-card storm">
+          <div class="legendary-icon"><i class="fas fa-dragon"></i></div>
+          <h3>Yamata no Orochi</h3>
+          <p class="legendary-region"><i class="fas fa-map-marker-alt"></i> Shihima · Ocho elementos</p>
+          <p>Ocho cabezas, ocho colas y un elemento distinto en cada una. Representa el caos natural anterior al
+            equilibrio entre humanos y dragones. Candidato a legendario de Shihima.</p>
+        </div>
+        <div class="legendary-card soul">
+          <div class="legendary-icon"><i class="fas fa-skull"></i></div>
+          <h3>El Dragón del Alma</h3>
+          <p class="legendary-region"><i class="fas fa-map-marker-alt"></i> Encerrado en Valkar</p>
+          <p>Hermano ancestral del Dragón de la Luz, desterrado tras la guerra entre ambos. Drakmor rompió su sello.
+            Su regreso es el origen de la corrupción y de los dragones espectrales.</p>
+        </div>
+      </div>
+
       <div class="coming-soon-note">
         <i class="fas fa-dragon"></i>
-        <p>Más dragones serán revelados conforme avance el desarrollo.</p>
+        <p>Más dragones serán revelados conforme avance el desarrollo. Los renders de los legendarios están en
+          producción.</p>
       </div>
 
     </div>
@@ -678,14 +799,21 @@
   <section id="historia" class="page-section">
     <div class="container">
       <div class="section-header">
-        <p class="section-eyebrow">Acto I</p>
-        <h2 class="section-title">El Inicio del Fin</h2>
+        <p class="section-eyebrow">La Crónica</p>
+        <h2 class="section-title">La Historia de Eteria</h2>
         <div class="title-ornament"><span>⸻</span><i class="fas fa-book-open"></i><span>⸻</span></div>
+        <p class="section-desc">La historia se cuenta en tres actos. El Acto I está terminado; el Acto II está en pleno
+          desarrollo y su primera región ya tiene toda su narrativa escrita.</p>
       </div>
 
       <div class="historia-layout">
         <div class="historia-book">
           <div class="book-page">
+            <div class="acto-titulo">
+              <span class="acto-num">Acto I</span>
+              <h3>El Inicio del Fin</h3>
+              <span class="acto-estado done"><i class="fas fa-check"></i> Terminado</span>
+            </div>
             <div class="book-drop-cap">E</div>
             <p>teria es un lugar lleno de fantasía, un mundo de paz donde dragones y humanos conviven desde tiempos
               inmemoriales. En esta isla mágica, los jóvenes eruditos tienen el privilegio de elegir a su primer
@@ -772,23 +900,107 @@
             <p class="historia-quote final">"La princesa ha convertido su reino en una prisión. Ha detenido la
               guerra, pero ahora está atrapada dentro de ella." — El Sabio del Monte Chirripó</p>
 
+            <div class="acto-titulo acto2">
+              <span class="acto-num">Acto II</span>
+              <h3>La Guerra de Valkar</h3>
+              <span class="acto-estado wip"><i class="fas fa-pen-nib"></i> En desarrollo</span>
+            </div>
+
+            <p>Sebastián llega a la casa del sabio con el mensaje de su padre. Allí escucha por primera vez el
+              verdadero origen de Eteria: dos dragones hermanos, el de la Vida y la Luz y el del Alma; un mundo creado
+              por uno y aceptado a regañadientes por el otro; una guerra antigua entre ambos que terminó con el Alma
+              desterrada tras una puerta sellada. Drakmor nunca dejó de rezarle. Y terminó por abrir esa puerta.</p>
+
+            <p>Los dragones corruptos que Sebastián vio arrasar Valkar no son criaturas nuevas: son la sombra del
+              Dragón del Alma. Y los dragones legendarios de las demás regiones ya han sido alcanzados por esa misma
+              corrupción — habrá que purificarlos antes de que puedan ayudar.</p>
+
+            <p>El sabio le prohíbe volver a Valkar: romper el domo antes de tiempo dispersaría la corrupción por todo
+              el mundo. Drakmor tampoco es una opción, protegida como está por un velo oscuro que nadie ha cruzado. La
+              guerra queda partida en dos frentes: <strong>dentro del domo, Sabrina resiste</strong>; fuera,
+              <strong>Sebastián debe reunir tres ejércitos y purificar tres dragones legendarios</strong> antes de que
+              la prisión de luz se agriete del todo. Por cercanía, el sabio le recomienda empezar por Nyru.</p>
+
+            <div class="historia-divider"><i class="fas fa-water"></i></div>
+
+            <h4 class="region-arc-title">Nyru — <em>El Mar que Nadie Mira</em></h4>
+
+            <p>Nyru está en medio del mar, y la única forma de llegar es la aldea de la costa: un pueblo pequeño de
+              donde parten los barcos que comercian con la isla. Cuando Sebastián llega, ningún barco está zarpando.
+              La aldea está bajo el control de Drakmor. Allí conoce a <strong>Selena</strong>, una campesina que le
+              explica lo que nadie se atreve a decir en voz alta: hace semanas que no sale nadie de ahí.</p>
+
+            <p>Juntos buscan ayuda en un rancho cercano, donde encuentran a la gente peleando contra los
+              drakmorianos. Sebastián se suma a la pelea sin dudarlo, y con su ayuda los rancheros ganan. Reclutados,
+              vuelven a la aldea y la recuperan sector por sector. Es la primera victoria real desde la caída de
+              Valkar.</p>
+
+            <p>Pero el paso a Nyru sigue cerrado: solo queda un capitán dispuesto a hacer la travesía, y cobra una
+              cantidad de jades que Sebastián no tiene ni de cerca. El capitán le ofrece un trato: en unos días se
+              celebra el torneo de dragones de la aldea. Si lo gana, el viaje es gratis. Sebastián se inscribe. Y lo
+              gana.</p>
+
+            <p>En plena travesía ven al dragón legendario de la región a lo lejos, sobre el mar. Está poseído por un
+              aura maligna mucho más intensa que la de cualquier dragón corrupto que hayan enfrentado. Selena no lo
+              duda ni un segundo: hay que salvarlo. <em>No es él.</em></p>
+
+            <div class="historia-divider"><i class="fas fa-dragon"></i></div>
+
+            <p>Nyru resulta ser un pueblo tranquilo y colorido, completamente ajeno a lo que ocurre fuera. En el
+              castillo tropical, la reina escucha a Sebastián y no le cree: en Nyru hay paz, dice, y no hay ninguna
+              evidencia de guerra. La isla es remota y lleva años sin contacto con Valkar por disputas del pasado.
+              Cuando Sebastián menciona a Cartago —la región hermana, la que debería poder confirmarlo todo— la reina
+              se extraña: hace años que no saben nada de Cartago, y el comercio se cortó sin que nadie sepa
+              exactamente por qué. Es la primera semilla de algo mucho más grande.</p>
+
+            <p>Selena propone otro camino: si el pueblo cree, la reina tendrá que creer. Van entonces a los tres
+              pilares de Nyru. Con los <strong>pescadores</strong> descubren un tramo de playa donde el mar se siente
+              enfermo, y detrás de él un puesto de avanzada de Drakmor lleno de dragones corruptos — demasiados para
+              enfrentarlos: hay que huir sin ser vistos. En la <strong>isla del cultivo</strong> acompañan un convoy
+              de campesinos que es emboscado a mitad de ruta. Y en el <strong>volcán donde se crían los dragones</strong>
+              siguen el rastro de una cría desaparecida hasta otro campamento enemigo, del que la rescatan
+              infiltrándose en silencio.</p>
+
+            <p>Cuando por fin vuelven ante la reina con medio pueblo detrás, ella empieza a entender. Demasiado
+              tarde: el cielo se tiñe de oscuridad y el ejército de Drakmor cae sobre la aldea. Nyru pelea sin estar
+              preparada, y aun así resiste — hasta que aparece el legendario, corrupto y controlado por un guerrero
+              enemigo.</p>
+
+            <p>Lo derrotan sin matarlo y lo llevan al volcán, donde Selena realiza el rito de purificación. Cuando
+              <strong>Azuarys</strong> vuelve en sí, entre ambos hay un vínculo que ninguno se explica — Selena jura
+              haberlo conocido de niña. El dragón la elige. Ella lo doma y se convierte en la guardiana de Nyru.</p>
+
+            <p>La reina pide perdón por haber dudado, y pone el ejército de Nyru a disposición del rescate de Valkar.
+              Antes de despedirse, le deja a Sebastián una advertencia sobre su próximo destino: <em>en Cartago hay
+              muchos problemas, y nada es lo que parece.</em></p>
+
+            <div class="mision-progreso">
+              <p class="mision-progreso-label">Progreso de la alianza</p>
+              <div class="mision-items">
+                <div class="mision-item done"><i class="fas fa-check-circle"></i> <span>Nyru — ejército + Azuarys</span>
+                </div>
+                <div class="mision-item"><i class="far fa-circle"></i> <span>Cartago — ejército + Talamanca</span></div>
+                <div class="mision-item"><i class="far fa-circle"></i> <span>Shihima — ejército + legendario</span></div>
+              </div>
+            </div>
+
             <div class="acto-badge">
-              <span>Acto II — Guerra de Valkar — En Desarrollo</span>
-              <p>Sebastián debe reunir tres ejércitos y tres dragones legendarios en las regiones de Eteria antes de
-                que la prisión de luz se rompa.</p>
+              <span>Acto III — Por escribir</span>
+              <p>La liberación de Valkar, el destino de Sabrina y el desenlace del conflicto con el Dragón del Alma
+                siguen sin escribirse.</p>
             </div>
           </div>
         </div>
 
         <div class="historia-sidebar">
           <div class="sidebar-card">
-            <h4><i class="fas fa-map"></i> El Mundo</h4>
-            <ul>
-              <li>Valkar</li>
-              <li>Shihima</li>
-              <li>Cartago</li>
-              <li>Nyru</li>
-              <li>Drakmor</li>
+            <h4><i class="fas fa-map"></i> Las Cinco Regiones</h4>
+            <ul class="sidebar-links">
+              <li><a href="#" onclick="openRegion('valkar'); return false;">Valkar</a></li>
+              <li><a href="#" onclick="openRegion('shihima'); return false;">Shihima</a></li>
+              <li><a href="#" onclick="openRegion('nyru'); return false;">Nyru</a></li>
+              <li><a href="#" onclick="openRegion('cartago'); return false;">Cartago</a></li>
+              <li><a href="#" onclick="openRegion('drakmor'); return false;">Drakmor</a></li>
             </ul>
           </div>
           <div class="sidebar-card">
@@ -799,6 +1011,7 @@
               <li>Sabrina — La Princesa</li>
               <li>El Sabio del Chirripó</li>
               <li>Roan — El rey</li>
+              <li>Selena — Guardiana de Nyru</li>
             </ul>
           </div>
           <div class="sidebar-card danger">
@@ -946,13 +1159,164 @@
     </div>
   </section>
 
-  <!-- ===================== LOGROS ===================== -->
-  <section id="logros" class="page-section">
+  <!-- ===================== TECNOLOGÍA ===================== -->
+  <section id="tecnologia" class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Bajo el Capó</p>
+        <h2 class="section-title">Tecnología</h2>
+        <div class="title-ornament"><span>⸻</span><i class="fas fa-microchip"></i><span>⸻</span></div>
+        <p class="section-desc">Eteria se construyó sin assets de terceros pagos: cada modelo, textura, shader y
+          sistema es propio. Estas son las herramientas detrás del juego.</p>
+      </div>
+
+      <h3 class="tech-group-title">Motor y programación</h3>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fab fa-unity"></i></div>
+          <h4>Unity 6 — URP</h4>
+          <p>Motor principal. Universal Render Pipeline para poder correr en gama media-baja sin renunciar a shaders
+            y post-procesado propios.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-hashtag"></i></div>
+          <h4>C#</h4>
+          <p>Todo el gameplay está escrito a mano en C# sobre MonoBehaviour: más de 28.000 líneas y más de 30
+            sistemas propios.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-code"></i></div>
+          <h4>Visual Studio Code</h4>
+          <p>Editor de código del proyecto, con depuración conectada a Unity para inspeccionar el juego en ejecución.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fab fa-git-alt"></i></div>
+          <h4>Git y GitHub</h4>
+          <p>Control de versiones de todo el proyecto, incluyendo el repositorio técnico donde se documentan los
+            sistemas y las bitácoras de desarrollo.</p>
+        </div>
+      </div>
+
+      <h3 class="tech-group-title">Sistemas de Unity</h3>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-diagram-project"></i></div>
+          <h4>Shader Graph</h4>
+          <p>Siete shaders propios: agua con profundidad real, cascadas, césped reactivo al viento y al jugador,
+            variación de color de dragones por instancia y máscara RGB para NPCs.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <h4>VFX Graph</h4>
+          <p>Efectos de partículas por GPU para los ataques elementales de cada tipo de dragón y los efectos
+            ambientales del mundo.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-film"></i></div>
+          <h4>Timeline + Cinemachine</h4>
+          <p>Cinemáticas con cámaras virtuales priorizadas dinámicamente, sobre una clase base común para que cada
+            escena se ejecute sin acoplarse a las demás.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-window-restore"></i></div>
+          <h4>UI Toolkit</h4>
+          <p>Toda la interfaz —inventario, tienda, cocina, combate y mapa— construida con el sistema de UI moderno de
+            Unity en lugar de Canvas tradicional.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-gamepad"></i></div>
+          <h4>Input System</h4>
+          <p>Soporte nativo de mando y teclado a través del sistema de entrada nuevo de Unity.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-route"></i></div>
+          <h4>NavMesh</h4>
+          <p>Navegación e IA de NPCs y dragones salvajes, con patrullaje, detección por distancia y desactivación
+            por lejanía para ahorrar CPU.</p>
+        </div>
+      </div>
+
+      <h3 class="tech-group-title">Arte y diseño</h3>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-cube"></i></div>
+          <h4>Blender 5</h4>
+          <p>Modelado, UV, rigging y animación. Los dragones usan esqueletos de más de 40 huesos con weight painting
+            manual y un avatar compartido para reutilizar animaciones entre especies.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-paintbrush"></i></div>
+          <h4>Krita</h4>
+          <p>Todas las texturas del juego están pintadas a mano, además de los íconos de la interfaz.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-bezier-curve"></i></div>
+          <h4>Inkscape</h4>
+          <p>Mapa del mundo y elementos vectoriales, pensados para escalar por niveles de zoom dentro del juego.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-book"></i></div>
+          <h4>Notion</h4>
+          <p>Toda la narrativa, el diseño de regiones y el timeline de misiones se planifican antes de tocar el
+            motor.</p>
+        </div>
+      </div>
+
+      <h3 class="tech-group-title">Optimización</h3>
+      <p class="tech-intro">La optimización se trató como un sistema central del proyecto, no como un paso final.
+        Estos son los resultados medidos con el Profiler y el Frame Debugger de Unity:</p>
+
+      <div class="perf-grid">
+        <div class="perf-card">
+          <span class="perf-value">5.000 → 1.000</span>
+          <span class="perf-label">Draw calls</span>
+          <p>Combinación de mallas por zona y GPU Instancing en materiales.</p>
+        </div>
+        <div class="perf-card">
+          <span class="perf-value">10M → 1M</span>
+          <span class="perf-label">Triángulos en aldea</span>
+          <p>Sistema LOD de 2 a 3 niveles en todos los modelos del mundo.</p>
+        </div>
+        <div class="perf-card">
+          <span class="perf-value">30 FPS</span>
+          <span class="perf-label">Gama media-baja</span>
+          <p>Estables, con calidad gráfica configurable desde el menú.</p>
+        </div>
+        <div class="perf-card">
+          <span class="perf-value">0 ms</span>
+          <span class="perf-label">Luz estática</span>
+          <p>Iluminación precalculada en lightmaps: coste nulo en tiempo real.</p>
+        </div>
+      </div>
+
+      <div class="tech-extra">
+        <h4><i class="fas fa-bolt"></i> Otras técnicas aplicadas</h4>
+        <ul>
+          <li><strong>Occlusion Culling</strong> por zonas — no se renderiza lo que la geometría tapa.</li>
+          <li><strong>LOD lógico</strong> — la IA de un NPC lejano se apaga, no solo su modelo.</li>
+          <li><strong>Árboles por GPU</strong> — miles de árboles sin GameObjects, con billboards como último nivel.</li>
+          <li><strong>Shader reactivo multi-textura</strong> — un solo material por objeto en vez de una variante por
+            aspecto.</li>
+          <li><strong>Detección por intervalos</strong> — los chequeos de distancia corren 5 veces por segundo, no 60.</li>
+        </ul>
+      </div>
+
+      <div class="tech-repo-note">
+        <i class="fab fa-github"></i>
+        <p>La documentación técnica completa —arquitectura, shaders, rendimiento y bitácoras de desarrollo— es
+          pública en el repositorio <a href="https://github.com/Tianaq26/eteria-world" target="_blank"
+            rel="noopener">eteria-world</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CRÉDITOS ===================== -->
+  <section id="creditos" class="page-section">
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow">Reconocimiento</p>
-        <h2 class="section-title">Logros y Reconocimientos</h2>
-        <div class="title-ornament"><span>⸻</span><i class="fas fa-trophy"></i><span>⸻</span></div>
+        <h2 class="section-title">Logros y Créditos</h2>
+        <div class="title-ornament"><span>⸻</span><i class="fas fa-star"></i><span>⸻</span></div>
         <p class="section-desc">Eteria nació como un proyecto de aprendizaje personal y hoy compite oficialmente en
           ferias científicas y tecnológicas a nivel nacional e internacional.</p>
       </div>
@@ -979,62 +1343,45 @@
         <div class="feature-card">
           <div class="feature-icon"><i class="fas fa-code"></i></div>
           <h3>+28.000 líneas de código</h3>
-          <p>Desarrollado en solitario desde el 15 de noviembre de 2024: motor Unity URP, +30 scripts propios,
-            shaders y VFX Graph hechos a medida, y más de 100 modelos 3D con texturas pintadas a mano.</p>
+          <p>Desarrollado desde el 15 de noviembre de 2024: motor Unity 6 URP, +30 sistemas propios, shaders y VFX
+            Graph hechos a medida, y más de 100 modelos 3D con texturas pintadas a mano.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CRÉDITOS ===================== -->
-  <section id="creditos" class="page-section">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">El Equipo</p>
-        <h2 class="section-title">Créditos</h2>
-        <div class="title-ornament"><span>⸻</span><i class="fas fa-star"></i><span>⸻</span></div>
       </div>
 
       <div class="credits-layout">
 
         <div class="team-section">
-          <h3 class="credits-sub">Equipo de Desarrollo</h3>
+          <h3 class="credits-sub">Desarrollo</h3>
           <div class="team-cards">
             <div class="team-card">
               <div class="team-avatar"><i class="fas fa-code"></i></div>
-              <h4>Sebastian Aguilar Quesada</h4>
-              <p>Desarrollo — programacion y diseño grafico</p>
-            </div>
-            <div class="team-card">
-              <div class="team-avatar"><i class="fas fa-file"></i></div>
-              <h4>Keneth Barquero Cubillo</h4>
-              <p>Documentacion</p>
+              <h4>Sebastián Aguilar Quesada</h4>
+              <p>Desarrollo completo — programación, arte 3D, shaders, narrativa y diseño</p>
             </div>
           </div>
         </div>
 
         <div class="nuestra-historia-section">
-          <h3 class="credits-sub">Nuestra Historia</h3>
+          <h3 class="credits-sub">Mi Historia</h3>
           <div class="historia-text-block">
-            <p>El juego fue desarrollado con el fin de participar en la competición Expotécnica, pero más que eso, para
-              llegar a ser un juego competitivo. Ese camino nos llevó a competir en <strong>Infomatrix Costa Rica</strong>,
-              donde ganamos la <strong>Medalla de Oro Nacional</strong> y con ella el derecho a representar al país en
-              <strong>Infomatrix Iberoamérica</strong>, en México, en junio de 2026. Nuestra inspiración son todas las
-              personas que a corta edad y solos contra el mundo lograron cosas increíbles, y queremos lo mismo.</p>
-            <p>Somos un equipo de desarrollo pequeño, pero esperamos poder llegar a cosas grandes. El proyecto comenzó
-              el 15 de noviembre de 2024, y llevamos más de 28,000 líneas de código además de muchas horas de trabajo.
-            </p>
-            <p>Todo esto fue hecho por nuestro equipo, que como única educación formal tiene Python básico de consola —
-              lo cual no es para nada lo que se necesita para hacer un videojuego. Se requiere aprender una infinidad de
-              tecnologías que nuestro equipo aprendió por su cuenta, todo esto con el fin de inspirar a otras personas para que se
-              empeñen en sus proyectos personales, así como muchas personas nos inspiraron a nosotros.</p>
-            <p class="historia-final"><em>Esta es nuestra historia, y apenas comienza.</em></p>
+            <p>El juego empezó con el fin de participar en la competición Expotécnica, pero más que eso, para llegar a
+              ser un juego competitivo de verdad. Ese camino me llevó a <strong>Infomatrix Costa Rica</strong>, donde
+              gané la <strong>Medalla de Oro Nacional</strong> y con ella el derecho a representar al país en
+              <strong>Infomatrix Iberoamérica</strong>, en México, en junio de 2026. Mi inspiración son todas las
+              personas que a corta edad y solas contra el mundo lograron cosas increíbles, y quiero lo mismo.</p>
+            <p>El proyecto comenzó el 15 de noviembre de 2024 y hoy lleva más de 28.000 líneas de código, cinco
+              regiones diseñadas y muchísimas horas de trabajo detrás.</p>
+            <p>Todo esto lo hice teniendo como única educación formal Python básico de consola — lo cual no es para
+              nada lo que se necesita para hacer un videojuego. Hay que aprender una infinidad de tecnologías, y las
+              aprendí por mi cuenta. Todo con el fin de inspirar a otras personas a empeñarse en sus proyectos
+              personales, así como muchas personas me inspiraron a mí.</p>
+            <p class="historia-final"><em>Esta es mi historia, y apenas comienza.</em></p>
           </div>
         </div>
 
         <div class="feedback-section">
           <h3 class="credits-sub">Apoya el Proyecto</h3>
-          <p>Tu opinión es fundamental para el desarrollo de Eteria. Danos tu retroalimentación y sé parte de la
+          <p>Tu opinión es fundamental para el desarrollo de Eteria. Dame tu retroalimentación y sé parte de la
             historia.</p>
           <a href="https://forms.cloud.microsoft/r/WCPu6UJkJM"
             target="_blank" rel="noopener" class="btn-eteria-primary">
