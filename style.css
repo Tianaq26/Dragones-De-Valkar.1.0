@@ -2346,3 +2346,50 @@ footer {
     text-align: center;
   }
 }
+
+/* ---------- AVISO DE LA BETA ---------- */
+.beta-aviso {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  max-width: 520px;
+  margin: 1.6rem auto 0;
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(201, 147, 58, 0.25);
+  border-radius: var(--radius);
+  background: rgba(13, 9, 5, 0.45);
+  backdrop-filter: blur(4px);
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  text-align: left;
+  animation: fadeUp 1s 1s both;
+}
+
+.beta-aviso i {
+  color: var(--gold-dim);
+  font-size: 0.9rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.beta-aviso strong {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.footer-aviso {
+  margin: 1.2rem auto 0;
+  max-width: 460px;
+  font-size: 0.76rem;
+  background: transparent;
+  backdrop-filter: none;
+  animation: none;
+}
+
+@media (max-width: 600px) {
+  .beta-aviso {
+    font-size: 0.75rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
