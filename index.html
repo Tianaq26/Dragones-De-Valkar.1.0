@@ -11,7 +11,7 @@
   <meta name="keywords"
     content="Eteria, juego de dragones, Unity, RPG, aventuras, mundo abierto, fantasía medieval, Infomatrix, Infomatrix Costa Rica">
 
-  <link rel="icon" href="imgs/logo.png" type="image/png">
+  <link rel="icon" href="imgs/logo1.jpg" type="image/jpeg">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -71,15 +71,16 @@
     <!-- HERO -->
     <div class="hero-section">
       <div class="hero-bg">
-        <img src="imgs/sabrinafondo1.png" alt="Eteria" class="hero-bg-img" id="heroBg" />
+        <img src="imgs/atardecer%20valkar%20entrada.png" alt="Eteria" class="hero-bg-img" id="heroBg" />
         <div class="hero-overlay"></div>
       </div>
+      <a href="#" class="hero-achievement-badge" onclick="showSection('creditos'); return false;"
+        title="Medalla de Oro Nacional — Infomatrix Costa Rica">
+        <i class="fas fa-trophy"></i><span>Oro Nacional · Infomatrix</span>
+      </a>
       <div class="hero-content">
         <p class="hero-eyebrow">Bienvenido a</p>
         <h1 class="hero-title">ETERIA</h1>
-        <a href="#" class="hero-achievement-badge" onclick="showSection('creditos'); return false;">
-          <i class="fas fa-trophy"></i> Medalla de Oro Nacional — Infomatrix Costa Rica 🥇
-        </a>
         <p class="hero-subtitle">Un mundo donde dragones y humanos conviven en paz.<br>Tu aventura está a punto de
           comenzar.</p>
         <div class="hero-actions">
@@ -182,7 +183,7 @@
               <div class="carousel-caption-eteria">Valkar — La Ciudad</div>
             </div>
             <div class="carousel-item">
-              <img src="imgs/sabrinafondo2.png" class="d-block w-100" alt="Eteria - Jardín del Castillo" />
+              <img src="imgs/jardin%20del%20castillo.png" class="d-block w-100" alt="Eteria - Jardín del Castillo" />
               <div class="carousel-caption-eteria">Jardín del Castillo</div>
             </div>
           </div>
@@ -220,7 +221,7 @@
 
         <div class="region-card region-valkar" onclick="openRegion('valkar')">
           <div class="region-card-img-wrap">
-            <img src="imgs/valkar.png" alt="Valkar" />
+            <img src="imgs/atardecer%20valkar%20entrada.png" alt="Valkar" />
             <div class="region-card-overlay"><i class="fas fa-arrow-right"></i><span>Explorar región</span></div>
           </div>
           <div class="region-card-body">
@@ -301,10 +302,8 @@
         </div>
 
         <div class="region-card region-drakmor" onclick="openRegion('drakmor')">
-          <div class="region-card-img-wrap no-img">
-            <div class="region-placeholder dark"><span>🌑</span>
-              <p>Región en desarrollo</p>
-            </div>
+          <div class="region-card-img-wrap">
+            <img src="imgs/dragon%20corrupto.png" alt="Dragón corrupto de Drakmor" loading="lazy" />
             <div class="region-card-overlay"><i class="fas fa-arrow-right"></i><span>Explorar región</span></div>
           </div>
           <div class="region-card-body">
@@ -362,10 +361,7 @@
         <!-- Sebastián -->
         <div class="character-card protagonist">
           <div class="character-img-wrap">
-            <div class="character-img-placeholder">
-              <i class="fas fa-user-circle"></i>
-              <p>Imagen próximamente</p>
-            </div>
+            <img src="imgs/sebastian.png" alt="Sebastián" loading="lazy" />
             <div class="character-badge">Protagonista</div>
           </div>
           <div class="character-body">
@@ -582,7 +578,7 @@
         <!-- Skarn -->
         <div class="dragon-card-new" data-type="compañero">
           <div class="dragon-img-wrap">
-            <img src="/imgs/skarn.png" alt="Skarn" class="dragon-img-real" />
+            <img src="imgs/skarn.png" alt="Skarn" class="dragon-img-real" />
             <div class="dragon-element fire"><i class="fas fa-fire"></i> Fuego</div>
           </div>
           <div class="dragon-card-body">
@@ -706,10 +702,7 @@
         <!-- Dragón Oscuro (misterio) -->
         <div class="dragon-card-new mystery" data-type="oscuro">
           <div class="dragon-img-wrap">
-            <div class="dragon-img-placeholder dark">
-              <i class="fas fa-question-circle"></i>
-              <p>???</p>
-            </div>
+            <img src="imgs/dragon%20corrupto.png" alt="Dragón corrupto de Drakmor" loading="lazy" />
             <div class="dragon-element dark"><i class="fas fa-skull"></i> Oscuro</div>
           </div>
           <div class="dragon-card-body">
@@ -1027,7 +1020,7 @@
               rompa.</p>
           </div>
           <div class="sidebar-card jardin">
-            <img src="imgs/sabrinafondo2.png" alt="Jardín del Castillo" />
+            <img src="imgs/jardin%20del%20castillo.png" alt="Jardín del Castillo" />
             <p class="caption">El Jardín del Castillo — donde los destinos se cruzan</p>
           </div>
         </div>
@@ -1055,6 +1048,18 @@
 
       <div class="gallery-grid" id="galleryGrid">
         <!-- Naturaleza -->
+        <div class="gallery-item" data-cat="naturaleza" onclick="openLightbox(this)">
+          <img src="imgs/chirripo.png" alt="El Monte Chirripó" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>El Monte Chirripó</span></div>
+        </div>
+        <div class="gallery-item" data-cat="naturaleza" onclick="openLightbox(this)">
+          <img src="imgs/santuario.png" alt="El Santuario" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>El Santuario</span></div>
+        </div>
+        <div class="gallery-item" data-cat="naturaleza" onclick="openLightbox(this)">
+          <img src="imgs/dragon%20corrupto.png" alt="Dragón corrupto" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Dragón corrupto de Drakmor</span></div>
+        </div>
         <div class="gallery-item" data-cat="naturaleza" onclick="openLightbox(this)">
           <img src="imgs/nat1.png" alt="Campo de flores" loading="lazy" />
           <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Campo de flores</span></div>
@@ -1092,6 +1097,22 @@
           <div class="gallery-overlay"><i class="fas fa-expand"></i><span>La Cantera</span></div>
         </div>
         <!-- Aldea -->
+        <div class="gallery-item featured" data-cat="aldea" onclick="openLightbox(this)">
+          <img src="imgs/valkar%20de%20noche.png" alt="Valkar de noche desde lo alto" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Valkar de noche</span></div>
+        </div>
+        <div class="gallery-item" data-cat="aldea" onclick="openLightbox(this)">
+          <img src="imgs/atardecer%20valkar%20entrada.png" alt="Atardecer en la entrada de Valkar" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Atardecer en la entrada</span></div>
+        </div>
+        <div class="gallery-item" data-cat="aldea" onclick="openLightbox(this)">
+          <img src="imgs/anochercer%20entrada%20valkar.png" alt="Anochecer en la entrada de Valkar" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Anochecer en la entrada</span></div>
+        </div>
+        <div class="gallery-item" data-cat="aldea" onclick="openLightbox(this)">
+          <img src="imgs/catedral%20de%20valkar.png" alt="La catedral de Valkar" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>La catedral de Valkar</span></div>
+        </div>
         <div class="gallery-item" data-cat="aldea" onclick="openLightbox(this)">
           <img src="imgs/aldea6.png" alt="La aldea de noche" loading="lazy" />
           <div class="gallery-overlay"><i class="fas fa-expand"></i><span>La aldea de noche</span></div>
@@ -1118,16 +1139,12 @@
         </div>
         <!-- Castillo -->
         <div class="gallery-item featured" data-cat="castillo" onclick="openLightbox(this)">
-          <img src="imgs/sabrinafondo1.png" alt="Jardín del Castillo" loading="lazy" />
+          <img src="imgs/jardin%20del%20castillo.png" alt="Jardín del Castillo" loading="lazy" />
           <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Jardín del Castillo</span></div>
         </div>
         <div class="gallery-item" data-cat="castillo" onclick="openLightbox(this)">
-          <img src="imgs/sabrinafondo2.png" alt="Jardín del Castillo 2" loading="lazy" />
-          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Jardín del Castillo</span></div>
-        </div>
-        <div class="gallery-item" data-cat="castillo" onclick="openLightbox(this)">
-          <img src="imgs/sabrinafondo3.png" alt="Jardín del Castillo 3" loading="lazy" />
-          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Jardín del Castillo</span></div>
+          <img src="imgs/sabrina.png" alt="Sabrina en el jardín" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Sabrina en el jardín</span></div>
         </div>
         <!-- Gameplay -->
         <div class="gallery-item" data-cat="gameplay" onclick="openLightbox(this)">
